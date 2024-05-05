@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Page</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <script src="addtocart.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/home"><img  src="logo.png" alt="Bocconcino Hawaii Logo"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/signup">Signup</a></li>
+                <li><a href="/shop">Shop</a></li>
+                <li><a href="/cart">Cart</a></li>
+                <li><a href="/info">Info</a></li>
+                <li><a href="/items/">Items</a></li>
+            </ul>
+        </nav>
+        <button class="cost-sort-btn">Sort by cost</button> 
+        <button class="Type-sort-btn">Sort by Type</button> 
+    </header>
+    <input type="text" id="search-input" class="search-bar" placeholder="Search products...">
+
+
+
+    <main>
+        <section id="pinsa-section">
+            <h2>Pinsa</h2>
+            <div class="product">
+                <img src="Prosciutto.jpg" alt="Pinsa 1">
+                <h3>Prosciutto</h3>
+                <p>Pinsa topped with tomato sauce, Fior di Latte mozzarella, Prosciutto di Parma and Arugula.</p>
+                <p>$18</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('1')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('1')">Add</button>
+            </div>
+            <div class="product">
+                <img src="Salsiccia-Porcini.jpg" alt="Pinsa 2">
+                <h3> Salsiccia & Porcini</h3>
+                <p>Pinsa topped with tomato sauce, Italian sausage, Porcini mushrooms and our homemade Fior Di Latte Mozzarella.</p>
+                <p>$19</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('2')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('2')">Add</button>
+            </div>
+            <div class="product">
+                <img src="Nduja.jpg" alt="Pinsa 3">
+                <h3>Nduja</h3>
+                <p> Pinsa topped with corbarino tomatoes, Straciatella mozzarella, Nduja salami, cured purple onions and basil.</p>
+                <p>$18</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('3')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('3')">Add</button>
+            </div>
+        </section>
+
+        <section id="panino-section">
+            <h2>Panino</h2>
+            <div class="product">
+                <img src="Bolognese.jpg" alt="Panino 1">
+                <h3></h3>Bolognese</h3>
+                <p>mortadella, pistachio crema, straciatella cheese and pistachio crumble on toasted bread.</p>
+                <p>$18</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('4')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('4')">Add</button>
+            </div>
+            <div class="product">
+                <img src="caprese.jpg" alt="Panino 2">
+                <h3>Panino Caprese</h3>
+                <p> fresh Fior di Latte mozzarella, tomatoes, basil, and extra virgin olive oil on toasted bread .</p>
+                <p>$15</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('5')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('5')">Add</button>
+            </div>
+            <div class="product">
+                <img src="Siciliano.jpg" alt="Panino 1">
+                <h3></h3>Siciliano </h3>
+                <p> Italian Sausage, caramelized onions, torched caciocavallo cheese, roasted eggplant and peppers on toasted bread.</p>
+                <p>$18</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('6')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('6')">Add</button>
+            </div>
+            <div class="product">
+                <img src="Romano.jpg" alt="Panino 1">
+                <h3></h3>Romano</h3>
+                <p> smoked pecorino cream, prchetta and salsa verde on toasted ciabatta bread.</p>
+                <p>$18</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('7')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('7')">Add</button>
+            </div>
+        </section>
+
+        <section id="desserts-section">
+            <h2>Desserts</h2>
+            <div class="product">
+                <img src="Tiramisu.jpg" alt="Dessert 1">
+                <h3>Tiramisu</h3>
+                <p>Classic Italian dessert made with layers of coffee-soaked ladyfingers and mascarpone cream.</p>
+                <p>$6.99</p>
+                <button class="favorite-btn">Favorite</button>
+                <button class="Add-btn" onclick="addToCart('8')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('8')">Add</button>
+            </div>
+            <div class="product">
+                <img src="Cannoli.jpg" alt="Dessert 2">
+                <h3> Limoncello Cannoli</h3>
+                <p>Crispy pastry shells filled with sweet lemon ricotta cream.</p>
+                <p>$6.99</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('9')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('9')">Add</button>
+            </div>
+            <div class="product">
+                <img src="Torta.jpg" alt="Dessert 2">
+                <h3> Torta Della Nonna</h3>
+                <p> Almond flour cake with lemon curd filling and powdered sugar.</p>
+                <p>$6.99</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('10')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('10')">Add</button>
+            </div>
+            <div class="product">
+                <img src="Ricotta.jpg" alt="Dessert 2">
+                <h3> Ricotta Pistachio Cake</h3>
+                <p> Fluffy cake with Ricotta Pistachio filling and powdered sugar.</p>
+                <p>$6.99</p>
+                <button class="favorite-btn">Favorite</button> 
+                <button class="Add-btn" onclick="addToCart('11')">Add</button>
+                <button class="Remove-btn" onclick="removeFromCart('11')">Add</button>
+            </div>
+        </section>
+        <script src="sort.js"></script>
+    </main>
+
+    <footer>
+        <!-- Social media links -->
+        <div class="social-media">
+            <a href="https://www.instagram.com/bocconcinohawaii/"><img src="instagram.jpg" alt="Instagram"></a>
+        </div>
+        
+        <!-- Address and phone number -->
+        <div class="contact-info">
+            <p>978 Kawaiahao St, 96814, Honolulu</p>
+            <p>Phone: (808) 200-2830</p>
+        </div>
+        
+    </footer>
+
+    <script src="home_.js"></script> <!-- Include your JavaScript file -->
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+    <script src="script2.js"></script>
+</body>
+</html>
